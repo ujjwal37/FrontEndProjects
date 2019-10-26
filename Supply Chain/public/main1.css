@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin:0;
+ }
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("1.jpg");
+    }
+
+ .pop{
+     color:white;
+     margin-top:50px;
+ }
+
+ .trip{
+     font-size : 40px;
+     color: whitesmoke;
+     width : 50%;
+     margin-left: 27%;
+     font-family: 'Grenze', serif;
+     animation: anim 3s 1;
+ }
+
+    .bhoop {
+        color:black;
+        font-family: 'Roboto', sans-serif;
+       margin-left : 47%;
+       margin-top : 40px;
+
+ }
+
+
+@keyframes anim{
+    0%{
+        color: black;
+        margin-top: -40px;
+    }
+    30%{
+        margin-bottom: 40px;
+        rotate: (360deg);
+    }
+}
