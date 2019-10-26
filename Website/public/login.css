@@ -1,0 +1,63 @@
+
+ 
+ 
+ header{
+       background-attachment: fixed;
+       background-position: 50% 50%;
+       height: 100%;
+       width:100%;
+       background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("login.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+ 
+ }
+ .tag{
+       color: rgba(255,255,255,.1);
+       background-image: url(images.jpg);
+       background-repeat: repeat-x;
+       -webkit-background-clip: text;
+       animation : animate 15s linear infinite
+ }
+
+ .container{
+       margin-left : 30%;
+       margin-right : 40%;
+       position : absolute;
+       background-color: whitesmoke;
+       height : 74%;
+       width  : 35%;
+       opacity: 0.6;
+ }
+ 
+
+ .head{
+
+      font-family: 'Pacifico', cursive;
+      
+
+ }
+
+ .ba{
+      padding: 30px;
+      margin-left: 100px;
+      margin-right : 40px;
+
+
+ }
+
+ .gap{
+       margin-top: 30px;
+ }
+
+ .fam{
+      font-family: 'Hammersmith One', sans-serif;
+ }
+ @keyframes animate{
+
+      0%{
+            background-position: Left 0px top 10px;  
+      }
+       100%{
+             background-position: Left 800px top 10px;
+       }
+ }

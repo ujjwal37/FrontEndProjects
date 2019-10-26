@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet"  href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" type="text/css"  href = "jaipur.css">
+</head>
+<header>
+     <nav class = "navbar navbar-dark bg-dark navbar-expand-lg">
+     <a href ="#" class="navbar-brand">Rajasthan Tourism</a>
+     <button class = "navbar-toggler" data-toggle = "collapse" data-target="#collapse">
+         <span class ="navbar-toggler-icon"></span>
+        </button>
+        <div class = "collapse navbar-collapse" id = "collapse">
+            <ul class = "navbar-nav ml-auto">
+                    <li class = "navbar-item dropdown">
+                       <a href = "#" class = "nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
+                       <div class ="dropdown-menu">
+                       <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Email Address</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <label class="col-sm-3 col-form-label">Password</label>
+                            <div class="col-md-9">
+                                <input type="password" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-9 offset-sm-3">
+                           <a href = "signup" class = "button btn  btn-primary">Sign up</a>
+                           <a htef = "Login" class = "button btn btn-primary">Login</a>
+                        </div>
+                        </div>
+                       </div>
+                    </form>                     
+                <li class="navbar-item">
+                    <a href="#gethome" class="nav-link">Home</a>
+                </li>
+                <li class = "navbar-item">
+                    <a href = "#getplaces" class = "nav-link">Places</a>
+                </li>
+                <li class = "navbar-item">
+                    <a href = "#getabout" class = "nav-link">About Us</a>
+                </li>
+               
+            </ul>
+        </div>
+ </nav>
+ <div class = "carousel slide" id = "slider" data-ride="carousel" >
+     <ul class="carousel-indicators">
+         <li data-target="#slider" data-slide-to="0" class = "active"></li>
+         <li data-target="#slider" data-slide-to="1"></li>
+         <li data-target="#slider" data-slide-to="2"></li>
+     </ul>
+     <div class = "carousel-inner">
+       <div class = "carousel-item active">
+           <img src="How-to-Plan-Family-Friendly-Hioliday-Trip-to-Rajasthan.jpg" alt="Jaipur" height = "580" width = "100%">
+           <div class = "carousel-caption">
+               <h3>Jaipur</h3>
+   <p> "Resplendent in the hues of its noble and magnificent past, the historic city of Jaipur stands out as one of the most spectacular and culturally vibrant destinations in the world."</p>
+           </div>
+        </div>
+           <div class = "carousel-item">
+               <img src="jisalmer-tipl-600x436-4.jpg" alt="amberFort" class= "col-12" height = "690" width = "100%">
+               <div class = "carousel-caption">
+                   <h3>Amber Fort</h3>
+                   <p> "Places like by people"</p>
+               </div>
+           </div>
+       <div class= "carousel-item">
+           <img src= "download.jpg" alt="Nargarhfort" class="col-12" height = "690" width = "100%">
+           <div class= "carousel-caption">
+               <h3>Nargarh Fort</h3>
+               <p>"place like this"</p>
+           </div>
+       </div>
+       </div>
+       <a class="carousel-control-prev" href="#slider" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#slider" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+     </div>
+</header>
+<body>
+    <div class ="container gap">
+        <h1 class = "t1 text-center gap transit" style = "color:black">References</h1>
+        <div class = "jumbotron">
+            <div class = "row">
+                <div class = "sideGap float-left" style =" width: 13rem">
+                 <button id = "hotel"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 388.819 388.819" style="enable-background:new 0 0 388.819 388.819;" xml:space="preserve"><path d="M368.753,175.923V80.088c0-13.132-10.684-23.816-23.816-23.816H43.882c-13.132,0-23.816,10.684-23.816,23.816v95.836
+                    C8.721,177.65,0,187.469,0,199.289v59.318c0,4.142,3.358,7.5,7.5,7.5h8.035v37c0,4.142,3.358,7.5,7.5,7.5h13.539v14.441
+                    c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-14.441h285.672v14.441c0,4.142,3.357,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-14.441h13.539
+                    c4.143,0,7.5-3.358,7.5-7.5v-37h8.034c4.143,0,7.5-3.358,7.5-7.5v-59.318C388.819,187.469,380.098,177.649,368.753,175.923z
+                     M35.065,80.088c0-4.861,3.955-8.816,8.816-8.816h301.055c4.861,0,8.816,3.955,8.816,8.816v95.566h-26.335
+                    c5.24-5.641,10.57-11.573,16.09-17.92c2.455-2.823,2.454-7.023-0.001-9.845c-21.698-24.938-39.865-43.105-64.796-64.796
+                    c-2.822-2.456-7.023-2.456-9.846,0c-24.932,21.692-43.098,39.859-64.795,64.796c-2.455,2.822-2.456,7.022-0.001,9.845
+                    c5.521,6.348,10.85,12.28,16.09,17.92h-51.503c5.24-5.641,10.571-11.573,16.091-17.92c2.455-2.823,2.455-7.023-0.001-9.845
+                    c-21.695-24.934-39.862-43.101-64.796-64.796c-2.822-2.456-7.023-2.456-9.846,0c-24.934,21.695-43.101,39.862-64.796,64.796
+                    c-2.456,2.822-2.456,7.022-0.001,9.845c5.521,6.347,10.851,12.279,16.091,17.92H35.065V80.088z M240.853,175.654
+                    c-6.901-7.084-13.872-14.611-21.15-22.842c17.929-20.287,33.803-36.161,54.085-54.086c20.282,17.924,36.156,33.799,54.086,54.086
+                    c-7.277,8.231-14.249,15.758-21.15,22.842H240.853z M82.093,175.654c-6.901-7.085-13.873-14.611-21.151-22.842
+                    c17.926-20.283,33.803-36.16,54.086-54.086c20.283,17.926,36.16,33.803,54.086,54.086c-7.277,8.231-14.249,15.757-21.151,22.842
+                    H82.093z M358.285,295.607H30.535v-29.5h327.75V295.607z M373.819,251.107H15v-51.818c0-4.761,3.874-8.635,8.636-8.635h341.547
+                    c4.762,0,8.636,3.874,8.636,8.635V251.107z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>></svg></button><br>
+                   <br> <h6 class = "transit"style = "margin-top : 5px" >Hotels</h6>
+                </div>
+                <div class = "sideGap float-left" style =" width: 13rem">
+                    <button id = "Bus"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 388.819 388.819" style="enable-background:new 0 0 388.819 388.819;" xml:space="preserve">><path d="m456 152c13.25-.015625 23.984375-10.75 24-24v-104c-.015625-13.25-10.75-23.984375-24-24h-432c-13.25.015625-23.984375 10.75-24 24v280c.015625 13.25 10.75 23.984375 24 24h24.722656c3.878906 23.089844 23.863282 40 47.277344 40s43.398438-16.910156 47.277344-40h193.445312c3.878906 23.089844 23.863282 40 47.277344 40s43.398438-16.910156 47.277344-40h24.722656c13.25-.015625 23.984375-10.75 24-24v-45.453125c.003906-9.601563-5.71875-18.277344-14.546875-22.054687l-41.453125-17.765626v-66.726562zm-440-128c.003906-4.417969 3.582031-7.996094 8-8h432c4.417969.003906 7.996094 3.582031 8 8v104c-.003906 4.417969-3.582031 7.996094-8 8h-440zm0 280v-120h32c4.324219-.277344 8.554688 1.316406 11.621094 4.378906 3.0625 3.066406 4.65625 7.296875 4.378906 11.621094v16h-16v16h16v16h-24v16h24v16h-32v16h22.496094c-2.871094 4.945312-4.824219 10.363281-5.773438 16h-24.722656c-4.417969-.003906-7.996094-3.582031-8-8zm80 48c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32 32 14.328125 32 32c-.019531 17.664062-14.335938 31.980469-32 32zm288 0c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32 32 14.328125 32 32c-.019531 17.664062-14.335938 31.980469-32 32zm75.148438-100.804688c2.941406 1.257813 4.851562 4.152344 4.851562 7.351563v45.453125c-.003906 4.417969-3.582031 7.996094-8 8h-24.722656c-3.878906-23.089844-23.863282-40-47.277344-40s-43.398438 16.910156-47.277344 40h-193.445312c-2.3125-13.984375-10.714844-26.222656-22.933594-33.40625s-27-8.574219-40.34375-3.792969v-74.800781c.25-8.5625-3.039062-16.847656-9.097656-22.902344-6.054688-6.058594-14.339844-9.347656-22.902344-9.097656h-32v-16h328v56c.015625 13.25 10.75 23.984375 24 24h46.363281zm-51.148438-35.195312h-40c-4.417969-.003906-7.996094-3.582031-8-8v-56h48zm0 0"/><path d="m140 168h-24c-11.042969.011719-19.988281 8.957031-20 20v24c.011719 11.042969 8.957031 19.988281 20 20h24c11.042969-.011719 19.988281-8.957031 20-20v-24c-.011719-11.042969-8.957031-19.988281-20-20zm4 44c-.003906 2.207031-1.792969 3.996094-4 4h-24c-2.207031-.003906-3.996094-1.792969-4-4v-24c.003906-2.207031 1.792969-3.996094 4-4h24c2.207031.003906 3.996094 1.792969 4 4zm0 0"/><path d="m92 40h-24c-11.042969.011719-19.988281 8.957031-20 20v24c.011719 11.042969 8.957031 19.988281 20 20h24c11.042969-.011719 19.988281-8.957031 20-20v-24c-.011719-11.042969-8.957031-19.988281-20-20zm4 44c-.003906 2.207031-1.792969 3.996094-4 4h-24c-2.207031-.003906-3.996094-1.792969-4-4v-24c.003906-2.207031 1.792969-3.996094 4-4h24c2.207031.003906 3.996094 1.792969 4 4zm0 0"/><path d="m172 40h-24c-11.042969.011719-19.988281 8.957031-20 20v24c.011719 11.042969 8.957031 19.988281 20 20h24c11.042969-.011719 19.988281-8.957031 20-20v-24c-.011719-11.042969-8.957031-19.988281-20-20zm4 44c-.003906 2.207031-1.792969 3.996094-4 4h-24c-2.207031-.003906-3.996094-1.792969-4-4v-24c.003906-2.207031 1.792969-3.996094 4-4h24c2.207031.003906 3.996094 1.792969 4 4zm0 0"/><path d="m252 40h-24c-11.042969.011719-19.988281 8.957031-20 20v24c.011719 11.042969 8.957031 19.988281 20 20h24c11.042969-.011719 19.988281-8.957031 20-20v-24c-.011719-11.042969-8.957031-19.988281-20-20zm4 44c-.003906 2.207031-1.792969 3.996094-4 4h-24c-2.207031-.003906-3.996094-1.792969-4-4v-24c.003906-2.207031 1.792969-3.996094 4-4h24c2.207031.003906 3.996094 1.792969 4 4zm0 0"/><path d="m332 40h-24c-11.042969.011719-19.988281 8.957031-20 20v24c.011719 11.042969 8.957031 19.988281 20 20h24c11.042969-.011719 19.988281-8.957031 20-20v-24c-.011719-11.042969-8.957031-19.988281-20-20zm4 44c-.003906 2.207031-1.792969 3.996094-4 4h-24c-2.207031-.003906-3.996094-1.792969-4-4v-24c.003906-2.207031 1.792969-3.996094 4-4h24c2.207031.003906 3.996094 1.792969 4 4zm0 0"/><path d="m412 40h-24c-11.042969.011719-19.988281 8.957031-20 20v24c.011719 11.042969 8.957031 19.988281 20 20h24c11.042969-.011719 19.988281-8.957031 20-20v-24c-.011719-11.042969-8.957031-19.988281-20-20zm4 44c-.003906 2.207031-1.792969 3.996094-4 4h-24c-2.207031-.003906-3.996094-1.792969-4-4v-24c.003906-2.207031 1.792969-3.996094 4-4h24c2.207031.003906 3.996094 1.792969 4 4zm0 0"/><path d="m228 168h-24c-11.042969.011719-19.988281 8.957031-20 20v24c.011719 11.042969 8.957031 19.988281 20 20h24c11.042969-.011719 19.988281-8.957031 20-20v-24c-.011719-11.042969-8.957031-19.988281-20-20zm4 44c-.003906 2.207031-1.792969 3.996094-4 4h-24c-2.207031-.003906-3.996094-1.792969-4-4v-24c.003906-2.207031 1.792969-3.996094 4-4h24c2.207031.003906 3.996094 1.792969 4 4zm0 0"/><path d="m308 168h-24c-11.042969.011719-19.988281 8.957031-20 20v24c.011719 11.042969 8.957031 19.988281 20 20h24c11.042969-.011719 19.988281-8.957031 20-20v-24c-.011719-11.042969-8.957031-19.988281-20-20zm4 44c-.003906 2.207031-1.792969 3.996094-4 4h-24c-2.207031-.003906-3.996094-1.792969-4-4v-24c.003906-2.207031 1.792969-3.996094 4-4h24c2.207031.003906 3.996094 1.792969 4 4zm0 0"/></svg></button><br>
+                   <br> <h6 class = "transit"style = "margin-top : 5px" >BUS</h6>
+                </div>
+                <div class = "sideGap float-left" style =" width: 13rem">
+                    <button id = "dish"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+                   <g>
+                       <g>
+                           <path d="M339.904,161.776l-5.136-16.904c-6.524-19.202-27.379-29.479-46.581-22.955c-10.802,3.67-19.285,12.153-22.955,22.955
+                               l-5.136,16.904c-4.322,14.256-5.229,29.329-2.648,44c2.354,12.352,10.196,22.964,21.312,28.84L273.008,363.2
+                               c-0.77,7.177,1.558,14.342,6.4,19.696c10.413,11.39,28.089,12.182,39.479,1.769c0.616-0.563,1.206-1.153,1.769-1.769
+                               c4.734-5.202,7.058-12.157,6.4-19.16L321.272,234.6c11.101-5.879,18.93-16.484,21.28-28.824
+                               C345.133,191.105,344.226,176.032,339.904,161.776z M326.792,202.992c-1.732,8.874-8.056,16.155-16.6,19.112
+                               c-3.243,1.219-5.332,4.387-5.176,7.848L311.096,365c0.28,2.649-0.594,5.29-2.4,7.248c-4.817,4.769-12.575,4.769-17.392,0
+                               c-1.896-2.116-2.757-4.964-2.352-7.776l6.032-134.52c0.156-3.461-1.933-6.629-5.176-7.848c-8.544-2.957-14.868-10.238-16.6-19.112
+                               c-2.14-12.18-1.386-24.693,2.2-36.528l5.136-16.912c3.974-10.745,15.906-16.234,26.652-12.26c5.681,2.101,10.159,6.58,12.26,12.26
+                               l5.136,16.912C328.174,178.3,328.928,190.812,326.792,202.992z"/>
+                       </g>
+                   </g>
+                   <g>
+                       <g>
+                           <path d="M216,120c-4.418,0-8,3.582-8,8v68.688l-21.656,21.656c-1.602,1.596-2.454,3.797-2.344,6.056l7,140
+                               c0.167,3.019-0.929,5.972-3.024,8.152c-4.379,4.418-11.511,4.45-15.93,0.07c-0.024-0.023-0.047-0.047-0.07-0.07
+                               c-2.096-2.18-3.191-5.133-3.024-8.152l7.048-140c0.112-2.258-0.737-4.458-2.336-6.056L152,196.688V128c0-4.418-3.582-8-8-8
+                               s-8,3.582-8,8v72c0,2.122,0.844,4.156,2.344,5.656l21.488,21.496l-6.824,136.472c-0.726,14.907,10.77,27.581,25.677,28.307
+                               c14.907,0.726,27.581-10.77,28.307-25.677c0.043-0.876,0.043-1.753,0-2.629l-6.824-136.472l21.488-21.496
+                               c1.5-1.5,2.344-3.534,2.344-5.656v-72C224,123.582,220.418,120,216,120z"/>
+                       </g>
+                   </g>
+                   <g>
+                       <g>
+                           <path d="M168,120c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8s8-3.582,8-8v-64C176,123.582,172.418,120,168,120z"/>
+                       </g>
+                   </g>
+                   <g>
+                       <g>
+                           <path d="M192,120c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8s8-3.582,8-8v-64C200,123.582,196.418,120,192,120z"/>
+                       </g>
+                   </g>
+                   <g>
+                       <g>
+                           <path d="M240,0C107.452,0,0,107.452,0,240s107.452,240,240,240s240-107.452,240-240C479.85,107.514,372.486,0.15,240,0z M240,464
+                               C116.288,464,16,363.712,16,240S116.288,16,240,16s224,100.288,224,224C463.859,363.653,363.653,463.859,240,464z"/>
+                       </g>
+                   </g>
+                   <g>
+                       <g>
+                           <path d="M265.969,390.172c-0.429-4.397-4.342-7.614-8.74-7.185c-0.103,0.01-0.206,0.022-0.309,0.036l0.032-0.008
+                               c-11.263,1.308-22.641,1.308-33.904,0c-4.39-0.515-8.365,2.626-8.88,7.016c-0.515,4.39,2.626,8.365,7.016,8.88
+                               c12.491,1.459,25.109,1.459,37.6,0C263.181,398.483,266.398,394.57,265.969,390.172z"/>
+                       </g>
+                   </g>
+                   <g>
+                       <g>
+                           <path d="M362.4,136.912c-2.839-3.385-7.885-3.828-11.27-0.988c-0.011,0.009-0.022,0.019-0.034,0.028
+                               c-3.377,2.848-3.807,7.894-0.96,11.272c48.235,57.26,44.545,141.929-8.488,194.776c-3.13,3.119-3.139,8.186-0.02,11.316
+                               c3.119,3.13,8.186,3.139,11.316,0.02C411.881,294.623,415.991,200.541,362.4,136.912z"/>
+                       </g>
+                   </g>
+                   <g>
+                       <g>
+                           <g>
+                               <path d="M186.392,105.744c-0.005,0-0.01-0.001-0.015-0.001c-0.008,0-0.016,0.001-0.025,0.001H186.392z"/>
+                               <path d="M277.736,84.472c-31.265-7.493-64.055-5.479-94.168,5.784c-4.136,1.555-6.227,6.169-4.672,10.304
+                                   c1.172,3.117,4.152,5.18,7.481,5.183c0.957-0.005,1.905-0.18,2.799-0.519c27.118-10.141,56.646-11.952,84.8-5.2
+                                   c4.295,1.038,8.618-1.601,9.656-5.896C284.67,89.833,282.031,85.51,277.736,84.472z"/>
+                           </g>
+                       </g>
+                   </g>
+                   <g>
+                       <g>
+                           <path d="M137.992,341.6C111.023,314.677,95.908,278.108,96,240c-0.079-30.446,9.565-60.122,27.528-84.704
+                               c2.655-3.532,1.944-8.547-1.588-11.202s-8.547-1.944-11.202,1.588c-0.047,0.063-0.093,0.126-0.138,0.19
+                               c-46.253,63.588-39.447,151.359,16.056,207.056c3.128,3.13,8.202,3.132,11.332,0.004C141.118,349.804,141.12,344.73,137.992,341.6
+                               z"/>
+                       </g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g>
+                   </g>
+                   <g></g><g></g><g></g><g></g><g></g>        </svg>
+</button><br><br>
+  <h6 class ="transit">Restaurants</h6>
+</div>
+<div class = "sideGap float-left">
+    <button id ="placeholder"><svg version = "1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+   <g>
+       <path d="M30,26c3.86,0,7-3.141,7-7s-3.14-7-7-7s-7,3.141-7,7S26.14,26,30,26z M30,14c2.757,0,5,2.243,5,5s-2.243,5-5,5
+           s-5-2.243-5-5S27.243,14,30,14z"/>
+       <path d="M29.823,54.757L45.164,32.6c5.754-7.671,4.922-20.28-1.781-26.982C39.761,1.995,34.945,0,29.823,0
+           s-9.938,1.995-13.56,5.617c-6.703,6.702-7.535,19.311-1.804,26.952L29.823,54.757z M17.677,7.031C20.922,3.787,25.235,2,29.823,2
+           s8.901,1.787,12.146,5.031c6.05,6.049,6.795,17.437,1.573,24.399L29.823,51.243L16.082,31.4
+           C10.882,24.468,11.628,13.08,17.677,7.031z"/>
+       <path d="M42.117,43.007c-0.55-0.067-1.046,0.327-1.11,0.876s0.328,1.046,0.876,1.11C52.399,46.231,58,49.567,58,51.5
+           c0,2.714-10.652,6.5-28,6.5S2,54.214,2,51.5c0-1.933,5.601-5.269,16.117-6.507c0.548-0.064,0.94-0.562,0.876-1.11
+           c-0.065-0.549-0.561-0.945-1.11-0.876C7.354,44.247,0,47.739,0,51.5C0,55.724,10.305,60,30,60s30-4.276,30-8.5
+           C60,47.739,52.646,44.247,42.117,43.007z"/>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   </svg></button><br><br>
+   <h6 class ="transit">Places</h6>
+</div>
+
+        </div>
+    </div>
+    </div>
+        <div class ="container  gap">
+                <h1 class ="t4 text-center gap transit" style = "color:black">Featured Places</h1>
+            <div class= "jumbotron">
+                <div class = "row">
+        <div class = "card  sideGap float-left op" style = "width: 13rem">
+        <img class = "card-img-top img-fluid" src = "1.jpg" alt = "jaipur">
+        <div class ="card-body"  style = "background-color: #DCDCDC">
+            <h5 class = "card-title">Jaipur</h5>
+            <p>"The pink city place of rajas and Maharajas"</p>
+            <button class ="btn btn-primary">Review</button>
+        </div>
+        </div>
+                <div class = "card  sideGap float-left op" style = "width: 13rem">
+            <img class = "card-img-top img-fluid" src ="1-5.jpg" alt= "udaipur">
+            <div class ="card-body" style = "background-color: #DCDCDC">
+            <h5 class = "card-title">Udaipur</h5>
+            <p>beauty defines here the mountains and the lakes</p>
+            <button class ="btn btn-primary">Review</button>
+        </div>
+        </div>
+                <div class = "card sideGap float-left op" style = "width: 13rem">
+                <img class = "card-img-top img-fluid" src ="1-5.jpg" alt= "udaipur">
+                <div class ="card-body" style = "background-color:	#DCDCDC">
+                <h5 class = "card-title">Udaipur</h5>
+                <p>beauty defines here the mountains and the lakes</p>
+                <button class ="btn btn-primary">Review</button>
+            </div> 
+            </div>
+                <div class = "card sideGap float-left op" style = "width: 13rem">
+                    <img class = "card-img-top img-fluid" src ="1-5.jpg" alt= "udaipur">
+                    <div class ="card-body" style = "background-color:	#DCDCDC">
+                    <h5 class = "card-title">Udaipur</h5>
+                    <p>beauty defines here the mountains and the lakes</p>
+                    <button class ="btn btn-primary">Review</button>
+                </div>
+                </div>
+                </div>
+            </div>
+                </div>
+
+                <div class = "container gap">
+                    <h1 class = "t3 text-center transit">
+                       Gallery
+                    </h1>
+                    <div class = "row">
+                        <div class ="col col-md-4 col-md-3">
+                            <img src ="galley1.jpg" class = "img-responsive" height = "365px" width = "365px">
+                        </div>
+                        <div class ="col col-md-4 col-md-3">
+                            <img src ="galley5.jpg" class = "img-responsive" height = "365px" width = "365px">
+                        </div>
+                        <div class = "col col-md-4 col-md-3">
+                            <img src = "galley3.jpg" class ="img-responsive" height ="365px" width = "365px">
+                        </div>
+                    </div>
+                    <div class ="row">
+                            <div class ="col col-md-4 col-md-3">
+                                    <img src ="galley4.jpg" class = "img-responsive" height = "365px" width = "365px">
+                                </div>
+                                <div class ="col col-md-4 col-md-3">
+                                    <img src ="galley2.jpg" class = "img-responsive" height = "365px" width = "365px">
+                                </div>
+                                <div class = "col col-md-4 col-md-3">
+                                    <img src = "galley6.jpg" class ="img-responsive" height ="365px" width = "365px">
+                                </div>
+
+                    </div>
+                    <div class ="row">
+                            <div class ="col col-md-4 col-md-3">
+                                    <img src ="galley7.jpg" class = "img-responsive" height = "365px" width = "365px">
+                                </div>
+                                <div class ="col col-md-4 col-md-3">
+                                    <img src ="galley8.jpg" class = "img-responsive" height = "365px" width = "365px">
+                                </div>
+                                <div class = "col col-md-4 col-md-3">
+                                    <img src = "galley9.jpg" class ="img-responsive" height ="365px" width = "365px">
+                                </div>
+
+                    </div>
+                </div>
+            <div class = "container gap">
+                <h1 class = "t2 text-center gap transit">Locations</h1>
+                <div class = "jumbotron">
+                    <p><a href ="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&t=m&oe=UTF8&msa=0&mid=1phwa1UOncn6a6Cw-vTZgUc9f2Lg&ll=24.17488174978602%2C73.26311581625475&z=7">
+                    <img  alt = "maps" src ="Screenshot (83).jpg" height = "850px" width = "1050px"></a></p>
+                </div>
+            </div> 
+            <div class = "container gap">
+                <h1 class = "text-center transit">Policy</h1>
+               
+                        <div class = "container gap">
+                                <div class = "row">
+                                        <div class = "col-sm-6 col-md-6 gap " style = "background-image: url(images.png)">
+                                        </div>
+                                    
+                                    <div class = "col-sm-6 col-md-6 gap "><h3 class = "text-center">Terms And Conditions</h3>
+                                    <div class ="col">
+         
+                                            The reservations feature of the Site is provided solely to assist customers in determining the availability of travel-related services and products and to make legitimate reservations and for no other purpose.
+        You warrant that you are at least 18 years of age, possess the legal authority to enter into the legal agreement constituted by your acceptance of these Conditions and to use the Site in accordance with such Conditions.
+        
+                                            Kindly note all taxes mentioned in our package and final negotiated rates have been as per current Government regulations. Any changes in tax structure due to Government policies or changes in rules are applicable at the time of billing.
+                                            <br>
+                                            <br>
+                                            <h4 class = "text-center">Refund Policy</h4>
+                                            All confirmed booking are non-amendable & non-refundable.
+                                            <br>
+                                            <br>
+                                            <h4 class = "text-center">Cancellation policy</h4>
+                                            In case of cancellation less than 48 hours prior to arrival or in case of no-show, one night-stay per room will be charged on your credit card.
+                                    </div>
+                                    </div>  
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class ="container gap">
+                    <h1 class = "t5 text-center transit">Book Now</h1>
+                    <div class = "container">
+                        <div class = "row">
+                            <div class = "col col-md-6 col-sm-6" style="background-image:url(book.jpg)">
+                                <div class = "col">
+
+                                </div>
+
+                            </div>
+                            <div class ="col-sm-6 col-md-6 gap "><h3 class = "text-center">BOOK NOW</h3>
+                                <div class ="form-group row">
+                               <label class = " col col-form-label">FirstName</label>
+                               <div class ="col col-md-9 col-sm-3">
+                                   <input type = "text" class="form-control" id = "userfirstname" placeholder="Ujjwal" name ="FirstName">
+                               </div>
+                                </div>
+                                <div class =" form-group row">
+                                    <label class = " col col-form-label">LastName</label>
+                                 <div class = "col col-md-9 col-sm-3">
+                                     <input type = "text" class = "form-control"  id = "userlastname"placeholder="Aggarwal" name = "LastName">
+                                 </div>
+                                </div>
+                                <div class = " form-group row">
+                                    <label class = " col col-form-label">Email</label>
+                                    <div class = "col col-md-9 col-sm-6">
+                                        <input type = "email" class = "form-control" id = "useremail" placeholder="Ujjwal2702@gmail.com" name = "Email">
+                                    </div>
+                                </div>
+                                <div class = " form-group row"> 
+                                        <label class = " col col-form-label">Phone Number</label>
+                                        <div class = "col col-md-9 col-sm-6">
+                                            <input type = "number" class = "form-control"  id = "userphone"placeholder="73399931853" name = "PhoneNumber">
+                                        </div>
+                                    </div>
+                                    <div class = " form-group row">
+                                            <label class = " col col-form-label">Arrival date</label>
+                                            <div class = "col col-md-9 col-sm-6">
+                                                <input type = "date" id = "useradate" class = "form-control" name = "adate">
+                                            </div>
+                                        </div>
+                                        <div class = "orm-group row">
+                                                <label class = " col col-form-label">Departure Date</label>
+                                                <div class = "col col-md-9 col-sm-6">
+                                                    <input type = "date"   id = "userddate" class = "form-control" name = "ddate">
+                                                </div>
+                                        </div>  
+                                        <div class = " form-group row">
+                                                <label class = " col col-form-label">Number of Persons</label>
+                                                <div class = "col col-md-9 col-sm-6">
+                                                    <input type = "number"   id = "usermemeber" class = "form-control" placeholder="4" name ="numberPerson">
+                                                </div>
+                                        </div>
+                                        
+                                        <div class = " form-group row">
+                                                <label class = " col col-form-label">Places</label>
+                                                <div class = "col col-md-9 col-sm-6">
+                                                    <input type = "text"   id = "Places" class = "form-control" placeholder=""Udaipur,Jaipur" name = "Places">
+                                                </div>
+                                        </div>  
+                                        <div class = " form-group row">
+                                                <label class = " col col-form-label">Tourist guide</label>
+                                                <div class = "col col-md-3">
+                                                    <select name="TouristGuide">
+                                                        <option>Yes</option>
+                                                        <option>No</option>
+                                                    </select>
+                                                </div>
+                                        </div> 
+                                        <div class = " form-group row">
+                                                <label class = " col col-form-label">Bus</label>
+                                                <div class = "col col-md-3">
+                                                    <select name = "Bus"  id = "userbus">
+                                                        <option>Ac</option>
+                                                        <option>Non-Ac</option>
+                                                        <option>none</option>
+                                                    </select>
+                                                </div>
+                                        </div> 
+                                        <div class = " form-group row" style="margin-left: 50%">
+                                            <a href = "submit" class="button btn btn-primary" id = 'submit'>Submit</a>
+                                        </div>   
+                        </div>
+                    </div>
+
+            </div>
+            </div>
+            <div class =" footer gap"id = "getabout" style = "clear : both">
+                    <div style = "background-color: #181818">
+                <h4 class = "text-center footcol"> Get Connected with us</h4>
+                <div class ="container">
+                    <div class = "row">
+                   
+             <div class = "col-sm-6 col-md-4 gap footcol"><h3 class = "text-center">About us</h3>
+             <div class = "col">This Website is made by student of Manipal University to provide easy and cheap transport to the people who like to travel and explore Jaipur.</div>
+                    </div>
+                    <div class = "col-sm-6 col-md-4 gap footcol"><h3 class = "text-center">Contacts</h3>
+                        <div class = "row">
+                        <div class = "col">  Ujjwal Aggarwal </div>
+                        <div class = "col">  +91 7339931853</div>
+                </div>
+           </div>
+           <div class ="col-sm-6 col-md-4 gap footcol"><h3 class ="text-center">Address</h3>
+           <div classs = "col"> Jaipur-Ajmer Express Highway, Dehmi Kalan, Near GVK Toll Plaza, Jaipur, Rajasthan 303007</div>
+           </div>
+           </div>
+           <div class="footer-copyright text-center py-3 footcol">© 2019 Copyright:HolidayzUnlimited</div>
+          </div>
+          </div>
+          </div>
+          <script src = "app.js"></script>          
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

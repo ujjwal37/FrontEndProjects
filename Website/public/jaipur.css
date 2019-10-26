@@ -1,0 +1,169 @@
+body{
+    background-color: whitesmoke;
+    transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+
+.gap{
+    margin-top : 80px;
+}
+
+.sideGap{
+   margin-left :30px;
+   margin-top  : 30px;
+   margin-right : 30px;
+}
+
+footer{
+    margin-top:60px;
+    height : 50px;
+    width: 100%;
+}
+
+.cardBox{
+    height : 50%;
+    width  :100%;
+    margin-top: 4%;
+    margin-right: 2%;
+    margin-left : 3%;
+    float: left;
+
+}
+.container{
+    height : 120%;
+    width : 100%;
+}
+
+.op{
+    opacity:0.8;
+}
+
+.op:hover{
+    opacity:1;
+    transition : 0.8s ease;
+
+}
+
+h1{
+    opacity: 0;
+    transition: opacity .5s .25s ease-out;
+}
+
+.transit{
+    opacity :1;
+}
+
+.footcol{
+ color : whitesmoke;
+}
+.dropdown-menu {
+    width: 300px !important;
+    margin: 25px !important;
+}
+#hotel{
+    height : 80px;
+    width : 60px;
+    border: 0px;
+    background: none;
+    box-shadow:0px;
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    margin : -30px 10px 15px 0px;
+}
+.t1{
+    animation: anim 3s 1; 
+}
+
+#hotel:focus{
+  outline : 0;
+}
+#hotel svg{
+    fill : darkgreen;
+}
+#hotel svg:hover{
+    fill : red;
+    transition : 0.2s ease;
+    animation: logo-spin infinite 2s linear;
+}
+#Bus{
+    height : 80px;
+    width : 60px;
+    border: 0px;
+    background: none;
+    box-shadow:0px;
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    margin : -30px 10px 15px 0px;
+}
+#Bus:focus{
+  outline : 0;
+}
+#Bus svg{
+    fill : darkgreen;
+}
+#Bus svg:hover{
+    fill : red;
+    transition : 0.2s ease;
+    animation: logo-spin infinite 2s linear;
+}
+#placeholder{
+    height : 80px;
+    width : 60px;
+    border: 0px;
+    background: none;
+    box-shadow:0px;
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    margin : -30px 10px 15px 0px;
+}
+#placeholder:focus{
+  outline : 0;
+}
+#placeholder svg{
+    fill : darkgreen;
+}
+#placeholder svg:hover{
+    fill : red;
+    transition : 0.2s ease;
+    animation: logo-spin infinite 2s linear;
+}
+#dish{
+    height : 80px;
+    width : 60px;
+    border: 0px;
+    background: none;
+    box-shadow:0px;
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    margin : -30px 10px 15px 0px;
+}
+#dish:focus{
+  outline : 0;
+}
+#dish svg{
+    fill : darkgreen;
+}
+#dish svg:hover{
+    fill : red;
+    transition : 0.2s ease;
+    animation: logo-spin infinite 2s linear;
+}
+
+@keyframes logo-spin{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes anim{
+    0%{
+        color: black;
+        margin-top: -40px;
+    }
+    30%{
+        margin-bottom: 40px;
+    }
+}
